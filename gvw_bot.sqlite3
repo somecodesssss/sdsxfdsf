@@ -1,0 +1,63 @@
+SQLite format 3@  .�@
+M�
+*�M�<�OtableticketsticketsCREATE TABLE tickets(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  guild_id INTEGER,
+  channel_id INTEGER,
+  opener_id INTEGER,
+  opened_at TEXT,
+  closed_at TEXT
+)�I�mtablemodlogmodlogCREATE TABLE modlog (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  guild_id INTEGER,
+  action   TEXT,
+  target_id INTEGER,
+  actor_id INTEGER,
+  reason   TEXT,
+  created_at TEXT
+)P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)�X�tableeventseventsCREATE TABLE events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  guild_id    INTEGER,
+  title       TEXT,
+  description TEXT,
+  starts_at   TEXT,
+  channel_id  INTEGER,
+  created_by  INTEGER
+)�u�=tablesettingssettingsCREATE TABLE settings (
+  guild_id           INTEGER PRIMARY KEY,
+  verified_role_id   INTEGER,
+  staff_role_id      INTEGER,
+  welcome_channel_id INTEGER,
+  log_channel_id     INTEGER,
+  roblox_universe_id INTEGER
+)��_tableusersusersCREATE TABLE users (
+  discord_id      INTEGER PRIMARY KEY,
+  roblox_id       INTEGER,
+  roblox_username TEXT,
+  verify_token    TEXT,
+  verified_at     TEXT,
+  chat_xp         INTEGER DEFAULT 0,
+  voice_seconds   INTEGER DEFAULT 0
+)
+������Ʌ���	;��������(+M	G�00000mahan000002025-09-16T22:34:48.580945+00:00
+
+
+��tickets
+
+�
+��^�
+�;
+��E33�ur�q�W��]	����D=2025-09-17 14:51:252025-09-17 14:51:35_MM
+�S9/�
+�~��Pߏ{�R(2025-09-16T23:03:34.847331+00:002025-09-16T23:04:50.573989+00:00_MM
+�S9/�
+�~�u�	����2025-09-16T23:04:03.962650+00:002025-09-16T23:04:42.317770+00:00_MM
+�S9/�
+�|mE�3ߏ{�R(2025-09-16T22:54:16.987784+00:002025-09-16T22:54:41.560448+00:00_MM
+�S9/�
+�yf�[ߏ{�R(2025-09-16T22:41:03.203458+00:002025-09-16T22:47:14.850727+00:00_MM
+�S9/�
+�zT�e	����2025-09-16T22:44:01.618996+00:002025-09-16T22:47:03.181188+00:00
+23
+�S9/�
+�{�ߏ{�R(2025-09-21 06:05:30
